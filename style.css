@@ -1,3 +1,56 @@
+@media screen and (max-width: 560px){
+  .modal{
+    width: 50%;
+  }
+}
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: dimgray;
+  margin: 20px;
+  padding: 0;
+}
+
+nav{
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+nav ul li{
+  display: inline;
+}
+
+h1{
+  margin-left: 50px;
+  font-size: xx-large;
+}
+
+.trigger{
+  margin-left: 50px;
+  background-color: rgb(64, 148, 71);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: xx-large;
+  
+  cursor: pointer;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -9,7 +62,10 @@
   visibility: hidden;
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  animation: animation 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
+
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -35,8 +91,7 @@
 .show-modal {
   opacity: 1;
   visibility: visible;
-  transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 5s 0s, transform rotate 0.25s;
 }
 
 .okey{
@@ -62,22 +117,31 @@
   }
 
   .loremIpsum{
-    text-align: center;
+    text-align: left;
     }
+    
+    @keyframes modal {
+      0% {
+        left: 0px;
+      }
+      50% {
+        left: 500px;
+      }
+      100% {
+        left: 0px;
+      }
+    };
+    
 
-  /*
+   
+
+
+
+
+
+
   
-  /* Add Animation */
- /* @-webkit-keyframes animatetop {*/
-  /*  from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
- /* }
-  
-  @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-  }*/
-  
+ 
 
 
 
